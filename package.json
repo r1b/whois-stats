@@ -1,0 +1,26 @@
+{
+  "name": "whois-stats",
+  "version": "1.0.0",
+  "description": "Fetches allocation statistics from RIRs",
+  "main": "index.js",
+  "dependencies": {
+    "ftp": "^0.3.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erg0dic/whois-stats"
+  },
+  "keywords": [
+    "whois"
+  ],
+  "author": "rcj@ccs.neu.edu",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/erg0dic/whois-stats/issues"
+  },
+  "homepage": "https://github.com/erg0dic/whois-stats"
+}
