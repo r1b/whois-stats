@@ -11,10 +11,12 @@ these statistics as a stream of JSON objects.
 ```javascript
 var stats = require('whois-stats');
 
-stats.statsFromFTP(stats.ARIN_LATEST, function (err, stream) {
+stats.statsFromFTP(stats.APNIC_LATEST, function (err, stream) {
     if (err) throw err;
     stream.on('entry', function (entry) {
-        // Do something with record
+        // entry is something like:
+        // {"registry":"apnic","cc":"JP","type":"ipv4","start":"202.11.0.0","value":"256",
+        //  "date":"19940413","status":"allocated","extensions":[],"_type":"allocation"}
     });
 });
 ```
