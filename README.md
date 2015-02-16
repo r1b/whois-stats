@@ -8,7 +8,7 @@ these statistics as a stream of JSON objects.
 
 ## Usage
 
-`
+```javascript
 var stats = require('whois-stats');
 
 stats.statsFromFTP(ws.ARIN_LATEST, function (err, stream) {
@@ -17,7 +17,7 @@ stats.statsFromFTP(ws.ARIN_LATEST, function (err, stream) {
         // Do something with record
     });
 });
-`
+```
 
 ## Why should I care?
 * Quantify IPv4 exhaustion
