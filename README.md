@@ -11,7 +11,7 @@ these statistics as a stream of JSON objects.
 ```javascript
 var stats = require('whois-stats');
 
-stats.statsFromFTP(ws.ARIN_LATEST, function (err, stream) {
+stats.statsFromFTP(stats.ARIN_LATEST, function (err, stream) {
     if (err) throw err;
     stream.on('entry', function (entry) {
         // Do something with record
